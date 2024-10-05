@@ -1,0 +1,149 @@
+// Initialize Lenis
+const lenis = new Lenis({
+  duration: 1.2,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  smooth: true,
+});
+
+// Animation loop
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#pinned-section",
+      pin: true,
+      start: "top top",
+      end: "+=300%", // Stay pinned for 100% of viewport height
+      scrub: true,
+      markers: true,
+    },
+  })
+  .fromTo(
+    ".clipped-image",
+    { clipPath: "inset(12% 25% 12% 25%)" },
+    { clipPath: "inset(1% 1% 1% 1%)", ease: "power2.inOut" }
+  )
+  .fromTo(
+    ".scaled-img",
+    {
+      scale: 0,
+    },
+    {
+      scale: 3,
+      ease: "linear",
+    },
+    "0"
+  )
+  .fromTo(
+    ".line-animation",
+    {
+      width: 0,
+    },
+    {
+      width: "100%",
+      ease: "linear",
+      duration: 1,
+    },
+    "0"
+  );
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: "#main-pinned-section",
+      pin: true,
+      start: "top top",
+      end: "+=120%", // Stay pinned for 100% of viewport height
+      scrub: 1,
+    },
+  })
+  .fromTo(
+    "#slide-1",
+    { x: 0 },
+    { x: "-100%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-1",
+    {
+      x: 0,
+    },
+    { x: "100%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-1 #img-wrapper",
+    {
+      x: "-60%",
+      scale: 1,
+    },
+    { x: "-150%", duration: 0.5, ease: "linear", scale: 0.8 },
+    "same"
+  )
+  .fromTo(
+    "#slide-2",
+    { x: "80%" },
+    { x: "0%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-2",
+    { x: "-80%" },
+    { x: "0%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-2 #img-wrapper",
+    {
+      x: "-15%",
+      scale: 0.5,
+    },
+    { x: "-60%", duration: 0.5, ease: "linear", scale: 1 },
+    "same"
+  )
+  .fromTo(
+    "#slide-3",
+    { x: "95%" },
+    { x: "80%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-3",
+    { x: "-95%" },
+    { x: "-80%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-3 #img-wrapper",
+    {
+      x: "0%",
+      scale: 0.15,
+    },
+    { x: "-15%", duration: 0.5, ease: "linear", scale: 0.5 },
+    "same"
+  )
+  .fromTo(
+    "#slide-4",
+    { x: "100%" },
+    { x: "95%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-4",
+    { x: "-100%" },
+    { x: "-95%", duration: 0.5, ease: "linear" },
+    "same"
+  )
+  .fromTo(
+    "#inner-slider-4 #img-wrapper",
+    {
+      scale: 0,
+    },
+    { duration: 0.5, ease: "linear", scale: 0.15 },
+    "same"
+  );

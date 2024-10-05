@@ -1,0 +1,16 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/66ed1ea942e415d5a4695d49_TuskerPro-4600Semibold.woff2);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/66f3cb141839ecf8f58d2c61_Roboto-Regular.woff2);
+}
+
+.font-TuskerPro {
+  font-family: myFirstFont;
+}
+.font-Roboto {
+  font-family: roboto;
+}

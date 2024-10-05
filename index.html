@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+  </head>
+  <body>
+    <section class="h-screen bg-[lightgreen] w-full"></section>
+    <section
+      class="h-screen overflow-hidden relative bg-[lightyellow] w-full"
+      id="pinned-section"
+    >
+      <img
+        class="w-full h-full object-cover clipped-image"
+        src="https://images.pexels.com/photos/27890042/pexels-photo-27890042/free-photo-of-storm-clouds-over-the-ocean.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <div
+        class="absolute scaled-img top-[50%] left-[50%] scale-0 translate-x-[-50%] bg-[#000] translate-y-[-50%] h-[80%] w-[80vh] rouned-full rounded-full z-[10]"
+      ></div>
+      <div
+        class="w-[0] z-[100] bg-[red] h-5 absolute top-10 left-0 line-animation"
+      ></div>
+    </section>
+    <section class="h-screen bg-[lightpink] w-full"></section>
+    <section
+      class="h-screen overflow-hidden font-Roboto bg-[#3F4EFDE] relative w-full"
+      id="main-pinned-section"
+    >
+      <div
+        class="section-heading pointer-events-none absolute top-0 left-0 w-full h-full z-[100]"
+      >
+        <h2
+          class="font-TuskerPro text-[#307070A] text-[100px] leading-[0.9] max-w-[1030px] uppercase pt-[2vh] pl-[2vw]"
+        >
+          profesionálové s <br />
+          bohatými zkušenostmi
+        </h2>
+      </div>
+      <div
+        id="slide-1"
+        class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
+      >
+        <div
+          id="inner-slider-1"
+          class="absolute bg-[red] top-0 left-0 w-full h-full"
+        >
+          <div class="bg-[#BFCCD8] absolute top-0 left-0 w-full h-full"></div>
+
+          <div
+            id="img-wrapper"
+            style="transform-origin: right bottom"
+            class="absolute right-0 bottom-[10vh] w-[33%] mt-[-27.55rem]"
+          >
+            <img
+              style="transform-origin: right bottom"
+              class="w-full"
+              src="https://cdn.prod.website-files.com/66e39bd98e7638adc0599b27/66e4a54fe19d2bb930523955_Rectangle%2022637.avif"
+            />
+          </div>
+
+          <div class="absolute top-0 pt-[30vh] pl-[3vw] left-0 h-full w-full">
+            <h1 class="text-[45px] font-TuskerPro font-bold text-[#070707]">
+              Hostesky & Promotéři
+            </h1>
+            <p class="max-w-[427px] font-Roboto leading-[150%]">
+              Naše hostesky a promotéři jsou proškolení profesionálové, kteří se
+              postarají o hladký průběh vaší akce. Jsou připraveni řešit
+              neočekávané situace a zajistit, že vše proběhne bez problémů.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="slide-2"
+        class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
+      >
+        <div
+          id="inner-slider-2"
+          class="absolute bg-[yellow] top-0 left-0 w-full h-full"
+        >
+          <div class="bg-[#B692A1] absolute top-0 left-0 w-full h-full"></div>
+          <div
+            style="transform-origin: right bottom"
+            id="img-wrapper"
+            class="absolute right-0 bottom-[10vh] w-[33%] mt-[-27.55rem]"
+          >
+            <img
+              style="transform-origin: right bottom"
+              class="w-full"
+              src="https://cdn.prod.website-files.com/66e39bd98e7638adc0599b27/66e4a54f1058a1dfe4f60b46_Rectangle%2022637%20(1).avif"
+            />
+          </div>
+          <div class="absolute pt-[30vh] pl-[3vw] top-0 left-0 h-full w-full">
+            <h1 class="text-[45px] font-TuskerPro font-bold text-[#070707]">
+              Výpomoc
+            </h1>
+            <p class="max-w-[427px] font-Roboto leading-[150%]">
+              Zajišťujeme profesionální a důkladně vyškolený personál, který
+              nejen zdokonalí každodenní provoz vašeho podniku, ale také
+              přetvoří vaše události v nezapomenutelné zážitky. Naši zaměstnanci
+              mají bohaté zkušenosti v oblasti restauračního i hotelového
+              provozu. Spolehněte se na nás a přenechte starosti s personálem do
+              našich zkušených rukou!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="slide-3"
+        class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
+      >
+        <div
+          id="inner-slider-3"
+          class="absolute bg-[yellow] top-0 left-0 w-full h-full"
+        >
+          <div class="bg-[#D2C07C] absolute top-0 left-0 w-full h-full"></div>
+          <div
+            style="transform-origin: right bottom"
+            id="img-wrapper"
+            class="absolute right-0 bottom-[10vh] w-[33%] mt-[-27.55rem]"
+          >
+            <img
+              style="transform-origin: right bottom"
+              class="w-full"
+              src="https://cdn.prod.website-files.com/66e39bd98e7638adc0599b27/66e4a54fe19d2bb930523955_Rectangle%2022637.avif"
+            />
+          </div>
+          <div class="absolute pt-[30vh] pl-[3vw] top-0 left-0 h-full w-full">
+            <h1 class="text-[45px] font-TuskerPro font-bold text-[#070707]">
+              Výpomoc
+            </h1>
+            <p class="max-w-[427px] font-Roboto leading-[150%]">
+              Zajišťujeme profesionální a důkladně vyškolený personál, který
+              nejen zdokonalí každodenní provoz vašeho podniku, ale také
+              přetvoří vaše události v nezapomenutelné zážitky. Naši zaměstnanci
+              mají bohaté zkušenosti v oblasti restauračního i hotelového
+              provozu. Spolehněte se na nás a přenechte starosti s personálem do
+              našich zkušených rukou!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="slide-4"
+        class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
+      >
+        <div
+          id="inner-slider-4"
+          class="absolute bg-[red] top-0 left-0 w-full h-full"
+        >
+          <div class="bg-[#798E7B] absolute top-0 left-0 w-full h-full"></div>
+
+          <div
+            style="transform-origin: right bottom"
+            id="img-wrapper"
+            class="absolute right-0 bottom-[10vh] w-[33%] mt-[-27.55rem]"
+          >
+            <img
+              class="w-full"
+              style="transform-origin: right bottom"
+              src="https://cdn.prod.website-files.com/66e39bd98e7638adc0599b27/66e4a54fe19d2bb930523955_Rectangle%2022637.avif"
+            />
+          </div>
+
+          <div class="absolute top-0 pt-[30vh] pl-[3vw] left-0 h-full w-full">
+            <h1 class="text-[45px] font-TuskerPro font-bold text-[#070707]">
+              Hostesky & Promotéři
+            </h1>
+            <p class="max-w-[427px] font-Roboto leading-[150%]">
+              Naše hostesky a promotéři jsou proškolení profesionálové, kteří se
+              postarají o hladký průběh vaší akce. Jsou připraveni řešit
+              neočekávané situace a zajistit, že vše proběhne bez problémů.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen bg-[black] w-full"></section>
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+
+      document.onkeydown = function (e) {
+        if (
+          e.keyCode == 123 ||
+          (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0))
+        ) {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>
