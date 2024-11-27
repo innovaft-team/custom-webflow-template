@@ -35,18 +35,19 @@
         class="section-heading pointer-events-none absolute top-0 left-0 w-full h-full z-[100]"
       >
         <h2
-          class="font-TuskerPro text-[#307070A] text-[100px] leading-[0.9] max-w-[1030px] uppercase pt-[2vh] pl-[2vw]"
+          class="font-TuskerPro main-text ease text-[100px] leading-[0.9] max-w-[1030px] uppercase pt-[2vh] pl-[2vw]"
         >
           profesionálové s <br />
           bohatými zkušenostmi
         </h2>
       </div>
+
       <div
         id="slide-1"
         class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
       >
         <div
-          id="inner-slider-1"
+          id="inner-slide-1"
           class="absolute bg-[red] top-0 left-0 w-full h-full"
         >
           <div class="bg-[#BFCCD8] absolute top-0 left-0 w-full h-full"></div>
@@ -81,7 +82,7 @@
         class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
       >
         <div
-          id="inner-slider-2"
+          id="inner-slide-2"
           class="absolute bg-[yellow] top-0 left-0 w-full h-full"
         >
           <div class="bg-[#B692A1] absolute top-0 left-0 w-full h-full"></div>
@@ -111,12 +112,13 @@
           </div>
         </div>
       </div>
+
       <div
         id="slide-3"
         class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
       >
         <div
-          id="inner-slider-3"
+          id="inner-slide-3"
           class="absolute bg-[yellow] top-0 left-0 w-full h-full"
         >
           <div class="bg-[#D2C07C] absolute top-0 left-0 w-full h-full"></div>
@@ -152,7 +154,7 @@
         class="absolute overflow-hidden w-full h-full bg-[#BFCCD8]"
       >
         <div
-          id="inner-slider-4"
+          id="inner-slide-4"
           class="absolute bg-[red] top-0 left-0 w-full h-full"
         >
           <div class="bg-[#798E7B] absolute top-0 left-0 w-full h-full"></div>
@@ -181,25 +183,46 @@
           </div>
         </div>
       </div>
+
+      <div
+        id="slide-5"
+        class="absolute z-0 overflow-hidden w-full h-full bg-[#BFCCD8]"
+      >
+        <div
+          id="inner-slide-5"
+          class="absolute bg-[red] top-0 left-0 w-full h-full"
+        >
+          <div class="bg-[#BFCCD8] absolute top-0 left-0 w-full h-full"></div>
+
+          <div
+            id="img-wrapper"
+            style="transform-origin: right bottom"
+            class="absolute right-0 bottom-[10vh] w-[33%] mt-[-27.55rem]"
+          >
+            <img
+              style="transform-origin: right bottom"
+              class="w-full"
+              src="https://cdn.prod.website-files.com/66e39bd98e7638adc0599b27/66e4a54fe19d2bb930523955_Rectangle%2022637.avif"
+            />
+          </div>
+
+          <div class="absolute top-0 pt-[30vh] pl-[3vw] left-0 h-full w-full">
+            <h1 class="text-[45px] font-TuskerPro font-bold text-[#070707]">
+              Hostesky & Promotéři
+            </h1>
+            <p class="max-w-[427px] font-Roboto leading-[150%]">
+              Naše hostesky a promotéři jsou proškolení profesionálové, kteří se
+              postarají o hladký průběh vaší akce. Jsou připraveni řešit
+              neočekávané situace a zajistit, že vše proběhne bez problémů.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="h-screen bg-[black] w-full"></section>
 
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script>
-      document.addEventListener("contextmenu", function (e) {
-        e.preventDefault();
-      });
-
-      document.onkeydown = function (e) {
-        if (
-          e.keyCode == 123 ||
-          (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0))
-        ) {
-          return false;
-        }
-      };
-    </script>
   </body>
 </html>
